@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#706A7B"
+    android:backgroundTint="#706A7B"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:layout_anchorGravity="center|center_vertical">
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="0dp"
+        android:foregroundGravity="center_vertical|center|center_horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginRight="0dp" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="164dp"
+        android:checked="false"
+        android:onClick="OnToggleClicked" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-black"
+        android:foregroundGravity="center_vertical|center"
+        android:gravity="center|center_horizontal"
+        android:scrollbarSize="20dp"
+        android:text="alarm"
+        android:textSize="40sp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="stop_watch"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="105dp"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="54dp"
+        android:text="clock"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="105dp"
+        android:layout_height="62dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="54dp"
+        android:text="timer"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>
