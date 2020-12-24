@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:background="#706A7B"
     android:backgroundTint="#706A7B"
-    tools:context=".Clock">
+    tools:context=".Clock"
+    tools:targetApi="lollipop">
 
     <TextView
         android:id="@+id/textView2"
@@ -18,7 +19,7 @@
         android:foregroundGravity="center_vertical|center"
         android:gravity="center|center_horizontal"
         android:scrollbarSize="20dp"
-        android:text="clock"
+        android:text="@string/clock"
         android:textSize="40sp"
         android:textStyle="normal|bold" />
 
@@ -27,31 +28,36 @@
         android:layout_width="wrap_content"
         android:layout_height="358dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_centerInParent="true"
         android:layout_marginStart="-2dp"
+        android:layout_marginLeft="-2dp"
         android:layout_marginTop="103dp"
         android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
         android:foregroundGravity="center_vertical|center|center_horizontal"
         android:format12Hour="hh:mm:ss"
         android:gravity="center|center_horizontal|center_vertical"
         android:scrollbarSize="40dp"
         android:textColor="#090D71"
         android:textSize="80sp"
-        tools:targetApi="jelly_bean_mr1"
-        android:layout_marginRight="0dp"
-        android:layout_marginLeft="-2dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentLeft="true" />
+        android:textStyle="bold"
+        tools:targetApi="jelly_bean_mr1" />
 
     <Button
         android:id="@+id/button7"
         android:layout_width="match_parent"
         android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:text="stop_watch"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="4dp"
+        android:text="Stop watch"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -64,7 +70,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
         android:layout_marginBottom="54dp"
-        android:text="alarm"
+        android:text="Alarm"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:textSize="20sp"
         android:textStyle="normal|bold"
@@ -78,7 +84,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="54dp"
-        android:text="timer"
+        android:text="Timer"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:textSize="20sp"
         android:textStyle="bold"

@@ -10,13 +10,18 @@ import android.view.View;
 import android.widget.Button;
 
 public class Clock extends AppCompatActivity {
-    private Button Button8;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clock);
-        Button8 =(Button) findViewById(R.id.button8);
+
+        Button  Button8 =(Button) findViewById(R.id.button8);
+        Button  Button9 =(Button) findViewById(R.id.button9);
+
+//        Set Alarm Button
+
         Button8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -27,5 +32,20 @@ public class Clock extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+//        Set Timer Button
+
+        Button9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                GoTimer();
+            }
+
+            private void GoTimer() {
+                Intent intent = new Intent(Clock.this,Timer.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

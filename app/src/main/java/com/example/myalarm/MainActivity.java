@@ -20,17 +20,22 @@ public class MainActivity extends AppCompatActivity
     TimePicker alarmTimePicker;
     PendingIntent pendingIntent;
     AlarmManager alarmManager;
-    private Button button3;
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         alarmTimePicker = (TimePicker) findViewById(R.id.timePicker);
-//        Clock Button Set
         alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
-        button3  =(Button) findViewById(R.id.button3);
+
+//        Button Id
+     Button button3 = (Button) findViewById(R.id.button3);
+     Button button4 = (Button) findViewById(R.id.button4);
+
+
+        //        Clock Button Set
+
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,11 +43,28 @@ public class MainActivity extends AppCompatActivity
             }
 
             private void openClock() {
-                Intent intent = new Intent(MainActivity.this,Clock.class);
+                Intent i = new Intent(MainActivity.this, Clock.class);
+                startActivity(i);
+            }
+        });
+
+
+        //        Timer Button set
+
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openTimer();
+            }
+
+            private void openTimer() {
+                Intent intent = new Intent(MainActivity.this, Timer.class);
                 startActivity(intent);
             }
         });
     }
+
+
     public void OnToggleClicked(View view)
     {
         long time;
