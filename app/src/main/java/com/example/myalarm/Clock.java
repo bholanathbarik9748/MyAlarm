@@ -17,6 +17,8 @@ public class Clock extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clock);
 
+//        variable initialization
+
         Button  Button8 =(Button) findViewById(R.id.button8);
         Button  Button9 =(Button) findViewById(R.id.button9);
 
