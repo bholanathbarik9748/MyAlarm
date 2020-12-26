@@ -21,6 +21,21 @@ public class Clock extends AppCompatActivity {
 
         Button  Button8 =(Button) findViewById(R.id.button8);
         Button  Button9 =(Button) findViewById(R.id.button9);
+        Button  Button7 =(Button) findViewById(R.id.button7);
+
+//        Set Stop-Watch Button
+
+        Button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                GoStopWatch();
+            }
+
+            private void GoStopWatch() {
+                Intent intent = new Intent(Clock.this,StopWatch.class);
+                startActivity(intent);
+            }
+        });
 
 //        Set Alarm Button
 

@@ -14,6 +14,7 @@ import android.widget.ToggleButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Calendar;
+import java.util.Set;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -30,9 +31,24 @@ public class MainActivity extends AppCompatActivity
         alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
 
 //        Button Id
+
      Button button3 = (Button) findViewById(R.id.button12);
      Button button4 = (Button) findViewById(R.id.button4);
+     Button button = (Button) findViewById(R.id.button);
 
+        //     StopWatch Button Set
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openStopWatch();
+            }
+
+            private void openStopWatch() {
+                Intent intent = new Intent(MainActivity.this,StopWatch.class);
+                startActivity(intent);
+            }
+        });
 
         //        Clock Button Set
 
